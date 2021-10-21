@@ -971,20 +971,7 @@ function ban_cf(code){
 var dest_fired = false;
 function dest(){
     
-        if(window.olplayer)
-            olplayer.src({ type: "application/x-mpegURL", src: "https://127.0.0.1/no_video.mp4.m3u8"});
-            if(!dest_fired){
-                dest_fired = true;
-                //ban_cf("Devtools opened");
-            }
-         setTimeout(function() {while (true) {eval("debugger");}}, 0);
-        //olvideo_html5_api.setAttribute("src", "https://127.0.0.1/no_video.mp4.m3u8");
-        document.body.innerHTML = "";
-        document.write(" Dont open Developer Tools. ");
-        
-        throw new Error(" Dont open Developer Tools. ");
-        
-        self.location.replace('https:' + window.location.href.substring(window.location.protocol.length));   
+           
 }
 
 navigator.dbrowold= (function(){
