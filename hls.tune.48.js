@@ -201,25 +201,25 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
     engine = new p2pml.hlsjs.Engine({
         "segments":{
                 "swarmId":                            md5p2p,
-                "forwardSegmentCount":                forwardSegmentCount, //100
-                "maxHistorySegments":                 store_segments //20
+                "forwardSegmentCount":                10, //forwardSegmentCount, //100
+                "maxHistorySegments":                 20, //store_segments //20
         },
         "loader":{
                // xhrSetup: function (xhr,url) {xhr.setRequestHeader('Accept','*/*')},
                 "useP2P":                             useP2pv,
-                "cachedSegmentExpiration":            86400000,
-                "cachedSegmentsCount":                store_segments,
+                "cachedSegmentExpiration":            300000, //86400000,
+                "cachedSegmentsCount":                10, //store_segments,
                 "httpDownloadProbability":            0.06, //0.06
                 "httpDownloadProbabilityInterval":    1000,
                 "bufferedSegmentsCount":              9,
                 "httpDownloadMaxPriority":            9,
                 "httpDownloadProbabilitySkipIfNoPeers":true,
-                "p2pDownloadMaxPriority":             p2pDownloadMaxPriority, //100
+                "p2pDownloadMaxPriority":             5, //p2pDownloadMaxPriority, //100
                 "requiredSegmentsPriority":           5,//3
                 "httpFailedSegmentTimeout":           1000,
                 "simultaneousP2PDownloads":           6,
                 "simultaneousHttpDownloads":          3,
-                "httpDownloadInitialTimeout":         httpDownloadInitialTimeoutv, //120000
+                "httpDownloadInitialTimeout":         0, //httpDownloadInitialTimeoutv, //120000
                 "httpDownloadInitialTimeoutPerSegment":16000,
                 "p2pSegmentDownloadTimeout":          8000, //4000 //60000
                 "httpUseRanges":                      false,
