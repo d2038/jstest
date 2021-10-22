@@ -85,7 +85,9 @@
         var html5 = {
           hlsjsConfig: {
                   "manifestLoadingMaxRetry": 999,
-                  "maxBufferLength":180,
+                  "maxBufferLength": 60,
+                  "maxMaxBufferLength": 180,
+                  "backBufferLength": 60,
                   "fragLoadingMaxRetry": 990,
                   "fragLoadingTimeOut":30000,
                   "maxFragLookUpTolerance":-5,
@@ -201,15 +203,16 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
     engine = new p2pml.hlsjs.Engine({
         "segments":{
                 "swarmId":                            md5p2p,
-                "forwardSegmentCount":                10, //forwardSegmentCount, //100
+                "forwardSegmentCount":                15, //forwardSegmentCount, //100
                 "maxHistorySegments":                 20, //store_segments //20
         },
         "loader":{
                // xhrSetup: function (xhr,url) {xhr.setRequestHeader('Accept','*/*')},
+                "consumeOnly":                        true,
                 "useP2P":                             useP2pv,
-                "cachedSegmentExpiration":            300000, //86400000,
-                "cachedSegmentsCount":                10, //store_segments,
-                "httpDownloadProbability":            0.06, //0.06
+                "cachedSegmentExpiration":            250000, //86400000,
+                "cachedSegmentsCount":                5, //store_segments,
+                "httpDownloadProbability":            0.1, //0.06, //0.06
                 "httpDownloadProbabilityInterval":    1000,
                 "bufferedSegmentsCount":              9,
                 "httpDownloadMaxPriority":            9,
