@@ -378,13 +378,13 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
         "segments":{
                 "swarmId":                            md5p2p,
                 "forwardSegmentCount":                20, //forwardSegmentCount, //100
-                "maxHistorySegments":                 0 //store_segments //20
+                "maxHistorySegments":                 3 //store_segments //20
         },
         "loader":{
                // xhrSetup: function (xhr,url) {xhr.setRequestHeader('Accept','*/*')},
                 "useP2P":                             false, //useP2pv,
                 "cachedSegmentExpiration":            300000, //86400000,
-                "cachedSegmentsCount":                0, //store_segments,
+                "cachedSegmentsCount":                3, //store_segments,
                 "httpDownloadProbability":            0.1, //0.06, //0.06
                 "httpDownloadProbabilityInterval":    1000,
                 "bufferedSegmentsCount":              8,
@@ -667,7 +667,7 @@ var tsDb = new Map();
         "requiredSegmentsPriority":         0,
         "forwardSegmentCount":              20, //1000,
         "p2pDownloadMaxPriority":           10, //1000,
-        "cachedSegmentsCount":              10, //500,
+        "cachedSegmentsCount":              3, //500,
         "cachedSegmentExpiration":          300000,
         "simultaneousP2PDownloads":         0, //6,
         //"p2pSegmentDownloadTimeout":        15000, //4000 //60000
