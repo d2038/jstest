@@ -123,13 +123,13 @@
         var errcount = 0;
         var html5 = {
           hlsjsConfig: {
-                  "maxBufferLength":50,
+                  "maxBufferLength":30,
                   "manifestLoadingMaxRetry": 999,
                   "fragLoadingMaxRetry": 990,
                   "fragLoadingTimeOut":30000,
                   "enableWorker": true,
                   "liveSyncDurationCount": 7,
-                  "backBufferLength": 90
+                  "backBufferLength": 30
                   //"forceKeyFrameOnDiscontinuity":false,
                   //"stretchShortVideoTrack":true,
                   //"maxAudioFramesDrift":100,
@@ -377,7 +377,7 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
     engine = new p2pml.hlsjs.Engine({
         "segments":{
                 "swarmId":                            md5p2p,
-                "forwardSegmentCount":                20, //forwardSegmentCount, //100
+                "forwardSegmentCount":                8, //forwardSegmentCount, //100
                 "maxHistorySegments":                 3 //store_segments //20
         },
         "loader":{
@@ -393,7 +393,7 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
                 "p2pDownloadMaxPriority":             10, //p2pDownloadMaxPriority, //100
                 "requiredSegmentsPriority":           requiredSegmentsPriority,//3
                 "httpFailedSegmentTimeout":           1000,
-                "simultaneousP2PDownloads":           0, //6,
+                "simultaneousP2PDownloads":           6, //6,
                 "simultaneousHttpDownloads":          3, //simultaneousHttpDownloads,
                 "httpDownloadInitialTimeout":         0, //httpDownloadInitialTimeoutv, //120000
                 "httpDownloadInitialTimeoutPerSegment":16000,
@@ -665,11 +665,11 @@ var tsDb = new Map();
                 ],
         "httpDownloadMaxPriority":          0,
         "requiredSegmentsPriority":         0,
-        "forwardSegmentCount":              20, //1000,
+        "forwardSegmentCount":              8, //1000,
         "p2pDownloadMaxPriority":           10, //1000,
         "cachedSegmentsCount":              3, //500,
         "cachedSegmentExpiration":          300000,
-        "simultaneousP2PDownloads":         0, //6,
+        "simultaneousP2PDownloads":         6, //6,
         //"p2pSegmentDownloadTimeout":        15000, //4000 //60000
         "httpUseRanges":                    false,
         "webRtcMaxMessageSize":             65535,
