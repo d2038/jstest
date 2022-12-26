@@ -377,7 +377,7 @@ if (typeof p2pml != "undefined" && p2pml.hlsjs.Engine.isSupported() && p2pml.cor
     engine = new p2pml.hlsjs.Engine({
         "segments":{
                 "swarmId":                            md5p2p,
-                "forwardSegmentCount":                8, //forwardSegmentCount, //100
+                "forwardSegmentCount":                20, //forwardSegmentCount, //100
                 "maxHistorySegments":                 3 //store_segments //20
         },
         "loader":{
@@ -665,7 +665,7 @@ var tsDb = new Map();
                 ],
         "httpDownloadMaxPriority":          0,
         "requiredSegmentsPriority":         0,
-        "forwardSegmentCount":              8, //1000,
+        "forwardSegmentCount":              20, //1000,
         "p2pDownloadMaxPriority":           10, //1000,
         "cachedSegmentsCount":              3, //500,
         "cachedSegmentExpiration":          300000,
