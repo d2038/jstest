@@ -1,0 +1,4 @@
+! 2022-12-26 https://netusia.xyz
+/progressbar.min.js$script
+/js/script-*.js$script
+
