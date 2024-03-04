@@ -1,67 +1,16 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-12-27T02:21:18.781Z",
+    "createdAt": "2024-03-04T21:10:00.066Z",
     "redirects": [
         {
-            "description": "Opcion 1",
-            "exampleUrl": "​https://ssl.p.jwpcdn.com/player/v/8.26.4/provider.hlsjs.js",
-            "exampleResult": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/provider.hlsjs.js",
-            "error": null,
-            "includePattern": "*/provider.hlsjs.js",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/provider.hlsjs.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Opcion 3 Netu 1",
-            "exampleUrl": "​https://netusia.xyz/js/video.js/7/videojs-hlsjs-plugin.1.2.9.js",
-            "exampleResult": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/videojs-hlsjs-plugin.1.2.9.js",
-            "error": null,
-            "includePattern": "*/videojs-hlsjs-plugin*.js",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/videojs-hlsjs-plugin.1.2.9.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Opcion 3 Netu 2",
-            "exampleUrl": "https://unpkg.com/hls.js@1.2.9/dist/hls.min.js",
-            "exampleResult": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.min.js",
-            "error": null,
-            "includePattern": "*/hls.min.js",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.min.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Opcion 3 Netu 3",
-            "exampleUrl": "https://netusia.xyz/js/hls.tune.128.js?98",
-            "exampleResult": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.tune.128.js?98",
+            "description": "Opcion 3 Netu",
+            "exampleUrl": "https://netusia.xyz/js/hls.tune.144.js?98",
+            "exampleResult": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.tune.js",
             "error": null,
             "includePattern": "*/hls.tune*.js*",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.tune.128.js$3",
+            "redirectUrl": "https://cdn.jsdelivr.net/gh/d2038/jstest@latest/hls.tune.js",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,
